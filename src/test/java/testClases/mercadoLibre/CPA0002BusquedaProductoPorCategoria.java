@@ -1,11 +1,9 @@
-package testClases;
+package testClases.mercadoLibre;
 
 import Base.BaseWebMercado;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import page.mercadoLibre.categoriaDeBusqueda;
-import page.mercadoLibre.homeMercadoLibre;
-import page.mercadoLibre.seleccionProductoCategoria;
+import page.mercadoLibre.*;
 
 import static constans.Constants.*;
 
@@ -15,6 +13,24 @@ public class CPA0002BusquedaProductoPorCategoria extends BaseWebMercado {
     @Parameters({""})
 
     public void CPA0002BusquedaProductoPorCategoria (){
+//        homeMercadoLibreWeb homeMercLibre= new homeMercadoLibreWeb();
+//        seleccionProductoCategoriaWeb seleccionDeProd= new seleccionProductoCategoriaWeb();
+//        categoriaDeBusquedaWeb categoriaDeBus= new categoriaDeBusquedaWeb();
+//
+//        homeMercLibre.homePagina();
+//        homeMercLibre.informacionCookie();
+//        homeMercLibre.ingresoProducto(productoModa);
+//        homeMercLibre.busquedaProducto();
+//        /**Genero MUJER*/
+//        categoriaDeBus.busquedaPorGenero(generoMujer);
+//        seleccionDeProd.obtieneDescrPrimerProducto();
+//        homeMercLibre.ingresoProducto(productoModa);
+//        homeMercLibre.busquedaProducto();
+//
+//        /**Categoria Ropa Interior*/
+//        categoriaDeBus.busquedaPorCategoria("Ropa Interior");
+//        seleccionDeProd.obtieneDescrSegundoProducto();
+
 
         homeMercadoLibre.pageObject().homePagina();
         homeMercadoLibre.pageObject().informacionCookie();
@@ -22,7 +38,7 @@ public class CPA0002BusquedaProductoPorCategoria extends BaseWebMercado {
         homeMercadoLibre.pageObject().busquedaProducto();
 
         /**Genero MUJER*/
-        categoriaDeBusqueda.pageObject().busquedaPorGenero(generoMujer);
+        categoriaDeBusqueda.pageObject().busquedaPorCategoria(generoMujer);
         seleccionProductoCategoria.pageObject().obtieneDescrPrimerProducto();
         homeMercadoLibre.pageObject().ingresoProducto(productoModa);
         homeMercadoLibre.pageObject().busquedaProducto();
