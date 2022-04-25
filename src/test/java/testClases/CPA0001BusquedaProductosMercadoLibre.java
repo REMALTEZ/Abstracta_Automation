@@ -1,4 +1,4 @@
-package testClases.mercadoLibre;
+package testClases;
 
 import Base.BaseWebMercado;
 import org.testng.annotations.Parameters;

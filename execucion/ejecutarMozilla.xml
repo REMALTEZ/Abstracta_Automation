@@ -6,13 +6,13 @@
 
     <test name="BUSQUEDA PRODUCTO MERCADO LIBRE">
         <classes>
-            <class name="testClases.mercadoLibre.CPA0001BusquedaProductosMercadoLibre" />
+            <class name="CPA0001BusquedaProductosMercadoLibre" />
         </classes>
     </test>
 
     <test name="BUSQUEDA PRODUCTO MERCADO LIBRE POR CATEGORIA">
         <classes>
-            <class name="testClases.mercadoLibre.CPA0002BusquedaProductoPorCategoria" />
+            <class name="CPA0002BusquedaProductoPorCategoria" />
         </classes>
     </test>
 
